@@ -13,7 +13,7 @@ use UN\Locode\Model\Location;
  */
 class LocationTest extends TestCase
 {
-    public function locationDataProvider()
+    public static function locationDataProvider()
     {
         return [
             'array with lowercase key' => [

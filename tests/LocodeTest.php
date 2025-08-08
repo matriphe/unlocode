@@ -17,7 +17,7 @@ class LocodeTest extends TestCase
     /**
      * @return Locode[][]
      */
-    public function locodeObjectProvider()
+    public static function locodeObjectProvider()
     {
         return [
             'data path and reader are provided' => [new Locode($GLOBALS['data_path'], new YamlReader())],
