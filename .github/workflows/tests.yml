@@ -31,6 +31,9 @@ jobs:
       - name: Composer install
         run: composer install -n
 
+      - name: Install doctrine/cache for tests
+        run: composer require --dev doctrine/cache
+
       - run: vendor/bin/phpunit
         env:
           XDEBUG_MODE: coverage
